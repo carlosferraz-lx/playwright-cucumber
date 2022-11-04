@@ -18,3 +18,4 @@ jobs:
         run: npm run test
       - name: Generate report
         run: npm run report
+      - uses: deblockt/cucumber-report-annotations-action@v1.7
