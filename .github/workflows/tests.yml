@@ -18,8 +18,6 @@ jobs:
         run: npm run test
       - name: Generate report
         run: npm run report
-      - name: Create folder
-        run: mkdir -p downloads
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
