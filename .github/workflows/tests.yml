@@ -19,7 +19,7 @@ jobs:
       - name: Generate report
         run: npm run report
       - name: Upload report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@vmaster
         with:
-          name: cucumber_report
-          path: carlosferraz-lx/playwright-cucumber
+          name: page
+          path: build
