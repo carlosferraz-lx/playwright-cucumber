@@ -9,6 +9,8 @@ jobs:
   tests_e2e:
     name: Playwright E2E Tests
     runs-on: ubuntu-latest
+    defaults:
+      working-directory: ./reports
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -23,5 +25,5 @@ jobs:
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
-          path: ${{ github.workspace }}/Artifacts
-          name: ${{ github.run_number }}
+          path: reports/
+          name: cucumber-report
