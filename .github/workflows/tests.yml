@@ -23,6 +23,5 @@ jobs:
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
-          name: report
-          path: downloads/
-          retention-days: 30
+          path: ${{ github.workspace }}/Artifacts
+          name: ${{ github.run_number }}
