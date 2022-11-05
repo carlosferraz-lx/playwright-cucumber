@@ -19,7 +19,7 @@ jobs:
       - name: Generate report
         run: npm run report
       - name: Upload report
-        uses: actions/upload-artifact@vmaster
+        uses: actions/upload-artifact@master
         with:
           name: page
           path: build
