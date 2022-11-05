@@ -19,11 +19,10 @@ jobs:
       - name: Generate report
         run: npm run report
       - name: Create folder
-        run: mkdir downloads
+        run: mkdir -p downloads
       - name: Upload report
         uses: actions/upload-artifact@v3
-        if: always()
         with:
-          name: playwright-report
-          path: playwright-report/
+          name: report
+          path: downloads/
           retention-days: 30
