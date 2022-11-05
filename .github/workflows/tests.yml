@@ -18,4 +18,8 @@ jobs:
         run: npm run test
       - name: Generate report
         run: npm run report
-      - uses: deblockt/cucumber-report-annotations-action@v1.7
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber_report
+          path: /reports
