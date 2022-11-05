@@ -9,8 +9,6 @@ jobs:
   tests_e2e:
     name: Playwright E2E Tests
     runs-on: ubuntu-latest
-    defaults:
-      working-directory: ./reports
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
