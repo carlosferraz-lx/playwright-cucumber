@@ -19,7 +19,7 @@ jobs:
       - name: Generate report
         run: npm run report
       - name: Upload report
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v3
         with:
-          name: page
-          path: build
+          name: cucumber_report
+          path: '/'
